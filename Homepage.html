@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Italian Food</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+
+
+
+
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->   <!--https://www.w3schools.com/w3css/w3css_sidebar.asp -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:15%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="Homepage.html" class="w3-bar-item w3-button">Home</a>
+  <a href="pasta.html" class="w3-bar-item w3-button">Pasta</a>
+  <a href="Pizza.html" class="w3-bar-item w3-button">Pizza</a>   
+  <a href="Risotto.html" class="w3-bar-item w3-button">Risotto</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="">
+    <div class="w3-button w3-padding-16 w3-left" style="background-color:#e9d483" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16" style="background-color:#e9d483"><input type="text"><button type="button">Search</div>
+    <div class="b"><h2><i><b>ITALIAN FOOD</i></b></h2></div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+<div class="slideshow-container"> <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/pasta.jpeg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/pizza.jpeg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/risotto.jpeg" style="width:100%">
+  </div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+<div style="text-align: justify";"text-justify:inter-word;">
+<h3 style="color:#000000"><i><b>About Italian Food</b></i></h3>
+<p style="color:#000000">
+<h4>Italian food is known for its healthy nature.Real Italian cooking has fresh ingredients 
+like tomatoes and other vegetables which are less processed. Which means it doesn't contain 
+much chemicals.Even though Italian food has a lot of healthy ingredients it is still known to
+ be one of the most delicious cuisines in the world.This is also because of the unique mix of 
+ Italian flavours which makes this cuisine stand out compared to other cuisines. And the best 
+ thing is only a handful of ingredients is nedded to create a good Italian Dish.The quality,
+ simplicity and Health Benefits of this cuisine surely makes it the best.Italy has always been 
+ popular for food. Even many varieties of cheeses that are used in the Kitchens world wide comes 
+ from Italy. Many famous breads such as Focaccia and Ciabata are also from Italy. This website has 
+ information on some of the most popular Italian foods which includes Pizza, Pasta and Risotto. This
+ website will give an insight about These three popular Italian Foods. This website will also include
+ recipes on how to make these dishes. I hope you enjoy this website.
+</h4>
+</p>
+</div> 
+ 
+  
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      
+      <a href="Homepage.html" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="pizza.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="pasta.html" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="rissoto.html" class="w3-bar-item w3-button w3-hover-black">4</a>
+      
+    </div>
+  </div>
+  
+  
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</script>
+
+</body>
+</html>

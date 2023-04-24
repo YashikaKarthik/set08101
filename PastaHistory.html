@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Italian Food</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+
+
+
+
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) --> 
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:15%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a> 
+  <a href="Homepage.html" class="w3-bar-item w3-button">Home</a>
+  <a href="pasta.html" class="w3-bar-item w3-button">Pasta</a>
+  <a href="pizza.html" class="w3-bar-item w3-button">Pizza</a>
+  <a href="Risotto.html" class="w3-bar-item w3-button">Risotto</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="">
+    <div class="w3-button w3-padding-16 w3-left" style="background-color:#e9d483" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16" style="background-color:#e9d483"><input type="text"><button type="button">Search</div>
+    <div class="b"><h2><i><b>ITALIAN FOOD</i></b></h2></div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+
+<br><br><br><br>
+<div style="text-align: center;">
+<img src="images/pasta.jpeg" height="400" width="400"></img>
+<br><br>
+<h2>  Fun Facts About Pasta</h2>
+</div>
+<div>
+<ol style="font-size:20px;"> 
+<li>Pasta pronounced as Pah-stuh is the Italian word for dough. Moreover, the dough contains Flour, water, salt and eggs.</li>
+<li>There are more than 600 varieties of pasta worldwide!! Some common pasta shapes are Fusilli, Gometi, Gemelli, Ruote, Penne, Farfalle and spaghetti.</li>
+<li>Top quality pasta is made from Durum Wheat. In addition, durum wheat is the hardest wheat known to man. This gives pasta its yellow amber color, enjoyable nutty flavor and the ability to retain both shape and firmness when cooked.</li>
+</ol>
+</p> <!-- http://www.wickedspoonconfessions.com/2015/06/15-fun-facts-about-pasta.html -->
+</div>
+</body>
+
+
+
+
+ <script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
